@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MouseLock" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/charcoal_black</item>
+        <item name="android:navigationBarColor">@color/charcoal_black</item>
+        <item name="android:windowBackground">@color/charcoal_black</item>
+        <item name="android:colorPrimary">@color/neon_green</item>
+    </style>
+</resources>

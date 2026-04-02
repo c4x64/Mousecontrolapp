@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MouseLock</string>
+    <string name="service_notification_title">Mouse Lock Active</string>
+    <string name="service_notification_text">Service running in background</string>
+    <string name="permission_required">Permissions required for mouse control</string>
+    <string name="shizuku_permission_denied">Shizuku permission denied. Mouse control will not work.</string>
+    <string name="overlay_permission_denied">Overlay permission required to show the control panel.</string>
+</resources>
