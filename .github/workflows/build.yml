@@ -29,6 +29,7 @@ jobs:
           echo "y" | sdkmanager "ndk;25.2.9519653" "cmake;3.22.1"
 
       - name: Generate gradlew if missing
+        working-directory: MouseLockApp
         run: |
           if [ ! -f gradlew ]; then
             gradle wrapper --gradle-version=7.6.1
@@ -36,11 +37,12 @@ jobs:
           chmod +x gradlew
 
       - name: Build Debug APK
+        working-directory: MouseLockApp
         run: ./gradlew assembleDebug --stacktrace
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         with:
           name: MouseLockApp-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: MouseLockApp/app/build/outputs/apk/debug/app-debug.apk
           retention-days: 7
