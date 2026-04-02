@@ -36,7 +36,10 @@ jobs:
         run: |
           echo "y" | sdkmanager "ndk;25.2.9519653" "cmake;3.22.1"
 
+
       - name: Generate gradlew
+      - name: Generate gradlew if missing
+ refs/remotes/origin/main
         run: |
           if [ ! -f gradlew ]; then
             gradle wrapper --gradle-version=7.6.1
